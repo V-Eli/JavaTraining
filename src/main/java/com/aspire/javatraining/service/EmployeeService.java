@@ -21,12 +21,12 @@ public class EmployeeService {
         return employeeRepository.getEmployeeById(id);
     }
 
-    public Employee addEmployee(Employee employee) {
-        return employeeRepository.addEmployee(employee);
+    public void addEmployee(Employee employee) {
+        employeeRepository.addEmployee(employee);
     }
 
-    public Employee updateEmployee(long id, Employee updatedEmployee) {
-        return employeeRepository.updateEmployee(id, updatedEmployee);
+    public void updateEmployee(long id, Employee updatedEmployee) {
+        employeeRepository.updateEmployee(id, updatedEmployee);
     }
 
     public boolean deleteEmployee(long id) {
